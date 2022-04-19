@@ -42,7 +42,7 @@ function draw(){
 
     if(backery != ""){
         for(i =0; i < objects.length; i++){
-            document.getElementById("teddy").innerHtMl = "Status :  Objects Detected";
+            document.getElementById("teddy").innerHTML = "Status :  Objects Detected";
             percent = floor(objects[i].confidence * 100);
             fill("#3232a8");
             text(objects[i].label+""+percent+"%", objects[i].x, objects[i].y);
