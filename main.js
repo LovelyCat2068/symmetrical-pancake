@@ -45,7 +45,7 @@ function draw(){
             document.getElementById("teddy").innerHTML = "Status :  Objects Detected";
             percent = floor(objects[i].confidence * 100);
             fill("#3232a8");
-            text(objects[i].label+""+percent+"%", objects[i].x, objects[i].y);
+            text(objects[i].label+" "+percent+"%", objects[i].x, objects[i].y);
             noFill();
             stroke("#3232a8");
             rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
